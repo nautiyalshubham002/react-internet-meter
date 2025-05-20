@@ -50,7 +50,7 @@ export const ReactInternetSpeedMeter = ({
       callbackFunctionOnError(err)
       window.clearInterval(intervalFun)
     }
-    startCalculating()
+    intervalFun = startCalculating()
   }
 
   const showResults = (startTime, endTime) => {
